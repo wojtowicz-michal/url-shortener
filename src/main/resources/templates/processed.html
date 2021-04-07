@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>URL Shortener</title>
+    <link th:rel="stylesheet" th:href="@{webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+</head>
+<body>
+<div class="container" style="width: 100%; min-height: 50vh; display: grid; place-items: center">
+    <div>
+        <label>Short URL: </label>
+        <p th:text="${'localhost:8080/' + DTO.alias}"></p>
+        <label>Expire date: </label>
+        <p th:text="${#dates.format(DTO.expireDate, 'dd/MM/YYYY HH:mm')}"></p>
+        <a th:href="@{/}" class="btn btn-primary">RETURN</a>
+    </div>
+</div>
+</body>
+</html>
