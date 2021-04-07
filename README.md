@@ -1,3 +1,4 @@
+![](https://github.com/wojtowicz-michal/url-shortener/workflows/tests/badge.svg)
 # URL Shortener
 
 Service that converts long URLs to short aliases - created with Spring Boot and H2 database.
